@@ -1,0 +1,55 @@
+body {
+  font-family: Consolas, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background-color: #353e35;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.colors {
+  display: flex;
+  justify-content: center;
+}
+
+.color {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.color:hover {
+  opacity: 0.7;
+}
+
+#guessPegs {
+  display: flex;
+  justify-content: center;
+}
+
+#guessPegs .peg {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+
+#result {
+  display: flex;
+  justify-content: center;
+}
+
+#result .peg {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}

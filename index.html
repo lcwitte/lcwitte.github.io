@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind Solution Checker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mastermind Solution Checker</h1>
+        <label for="participants">Select Participant:</label>
+        <select id="participants" onchange="loadGame()">
+            <option value="">Select Participant</option>
+            <option value="0">Participant 1</option>
+            <option value="1">Participant 2</option>
+            <!-- Add more participants as needed -->
+        </select>
+        <div id="gameBoard" style="display: none;">
+            <div id="guessRow" class="row">
+                <h3>Your Guess:</h3>
+                <div id="guessPegs"></div>
+            </div>
+            <div id="colorPicker" class="row">
+                <h3>Color Picker:</h3>
+                <div class="colors">
+                    <div class="color" style="background-color: red;" onclick="selectColor('red')"></div>
+                    <div class="color" style="background-color: green;" onclick="selectColor('green')"></div>
+                    <div class="color" style="background-color: blue;" onclick="selectColor('blue')"></div>
+                    <div class="color" style="background-color: yellow;" onclick="selectColor('yellow')"></div>
+                    <div class="color" style="background-color: orange;" onclick="selectColor('orange')"></div>
+                    <div class="color" style="background-color: purple;" onclick="selectColor('purple')"></div>
+                </div>
+            </div>
+            <div id="resultRow" class="row">
+                <h3>Result:</h3>
+                <div id="result"></div>
+            </div>
+            <button onclick="checkSolution()">Check Solution</button>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
