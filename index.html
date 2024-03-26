@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mastermind Solution Checker</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/LogoPegasus.png">
 </head>
 <body>
     <div class="container">
@@ -14,12 +15,37 @@
             <option value="">Select Participant</option>
             <option value="0">Participant 1</option>
             <option value="1">Participant 2</option>
-            <!-- Add more participants as needed -->
+            <option value="2">Participant 3</option>
+            <option value="3">Participant 4</option>
+            <option value="4">Participant 5</option>
+            <option value="5">Participant 6</option>
+            <option value="6">Participant 7</option>
+            <option value="7">Participant 8</option>
+            <option value="8">Participant 9</option>
+            <option value="9">Participant 10</option>
+            <option value="10">Participant 11</option>
+            <option value="11">Participant 12</option>
+            <option value="12">Participant 13</option>
+            <option value="13">Participant 14</option>
+            <option value="14">Participant 15</option>
+            <option value="15">Participant 16</option>
+            <option value="16">Participant 17</option>
+            <option value="17">Participant 18</option>
+            <option value="18">Participant 19</option>
+            <option value="19">Participant 20</option>
+            <option value="20">Participant 21</option>
+            <option value="21">Participant 22</option>
+            <option value="22">Participant 23</option>
+            <option value="23">Participant 24</option>
+            <option value="24">Participant 25</option>
+            <option value="25">Participant 26</option>
+            <option value="26">Participant 27</option>
+            <option value="27">Participant 28</option>
         </select>
         <div id="gameBoard" style="display: none;">
             <div id="guessRow" class="row">
                 <h3>Your Guess:</h3>
-                <div id="guessPegs"></div>
+                <div id="guessCode"></div>
             </div>
             <div id="colorPicker" class="row">
                 <h3>Color Picker:</h3>
@@ -31,10 +57,13 @@
                     <div class="color" style="background-color: orange;" onclick="selectColor('orange')"></div>
                     <div class="color" style="background-color: purple;" onclick="selectColor('purple')"></div>
                 </div>
+                <button onclick="tryAgain()">Try Again</button>
+                <button onclick="backspace()">Backspace</button>
             </div>
             <div id="resultRow" class="row">
                 <h3>Result:</h3>
                 <div id="result"></div>
+                <div id="message"></div>
             </div>
             <button onclick="checkSolution()">Check Solution</button>
         </div>
